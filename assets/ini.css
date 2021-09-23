@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+/*Navbar*/
+
+.navbar{
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(220, 53, 69);
+	position: relative;
+	z-index: 1;
+	transition: 0.5s ease;
+}
+
+
+.navbar-brand{
+	font-size: 32px;
+}
+
+.nav-link{
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+.navbar img{
+	width: 50px;
+	height: 70px;
+	margin-right: 10px;
+}
+
+
+
+
+.jumbotron{
+	background-image: url(../assets/images/kelurahan2.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;;
+	height: 540px;
+	position: relative;
+}
+
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 60%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+	position: absolute;
+	bottom: 0;
+
+
+}
+
+.jumbotron .display-4{
+	margin-top: 100px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(148, 148, 148, 0.6);
+	color: rgb(214, 79, 79);
+	font-weight: 500;
+	font-size: 40px;
+	font-family: 'Anton';
+}
+
+.jumbotron p{
+	color: white;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+/*Utilities*/
+.tombol{
+	border-radius: 50px;
+	margin-top: 5px;
+}
+
+.login{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Container*/
+.container{
+	font-family: 'Raleway', sans-serif;
+}
+
+.container h3{
+	text-align: center;
+	
+}
+
+.container .row{
+	margin-top: 20px;
+	display: flex;
+}
+
+.row{
+	margin-top: 60px;
+}
+
+.tinjau{
+	margin-top: 50px;
+	height: 520px;
+}
+
+.lapor{
+	height: 520px;
+	margin-left: 40px;
+
+}
+
+
+
+/* Slide */
+.foto img{
+	border-radius: 50px;
+}
+
+.gal{
+	margin-bottom: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.foot{
+	width: 100%;
+	height: 50px;
+	font-family: 'times new roman';
+	/*text-align: center;
+	position: relative;
+	border: 4px solid;
+	display:flex;
+	z-index: 1;*/
+}
+
+
+/*responsive*/
+@media (min-width: 992px) { 
+
+	.navbar{
+		background:transparent;
+		color: #181818;
+		transition: 0.5s ease;
+	}
+
+	.navbar-brand, .nav-link{
+		color: rgb(29, 29, 29) ;
+		text-shadow: 1px 1px 1px rgba(68, 68, 68, 0.5);
+	}
+	/*.navbar.scrolled{
+		background-color: rgb(220, 53, 69);
+		color: white !important;
+	}*/
+
+	.navbar.scrolled {
+		background-color: rgb(220, 53, 69);
+		
+	}
+
+	.nav-link:hover::after{
+		border-bottom: 3px solid #f7f7f7;
+		content: '';
+		display: block;
+		width: 60%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+
+	}
+
+	.abc.ncol{
+		color: #eef !important;
+	}
+
+	.jumbotron{
+		margin-top: -100px;
+		height: 640px;
+	}
+
+	.jumbotron .display-4{
+		font-size: 70px;
+	}
+
+	.tinjau{
+		height: 520px;
+		
+	}
+	
+	.lapor{
+		margin-top:0px;
+	}
+
+}
